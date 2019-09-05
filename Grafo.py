@@ -18,7 +18,7 @@ class Grafo(object):
 
                     for l in listaElementos2:
                         if l in listaVerticesAdj: #checa se o elemento l pertence a lista de adjacentes de k
-                            flag2 +=1 #
+                            flag2 +=1 #incrementa a flag2 
                     if flag2 == len(listaElementos2):
                         flag1 +=1 #incrementa a flag se o todos os elementos da lista2 estiverem na lsita de adjacencia
                 if flag1 == len(j):
@@ -35,3 +35,5 @@ class Grafo(object):
             elif len(i) == tam:
                 cliqueMax.append(i)
         return cliqueMax
+
+##Custo operacional de O(n!)
